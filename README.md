@@ -12,7 +12,7 @@ This proof-of-concept uses field-oriented control (adapted from SimpleFOC) to co
 ![motion control diagram](https://docs.simplefoc.com/extras/Images/a_b_i.drawio.png "Motion Control Diagram")
 *Motion control diagram from [simplefoc](https://docs.simplefoc.com/motion_control_implementation).*
 
-The FOC library, in position control, calculates phase voltages from the desired angle. It factors in angle error, velocity error, velocity feed-forward, current error, and current feed-forward. In this demo, the motor angle follows a sine wave to represent the panning motion of the phone mount.
+The FOC library, in position control mode, calculates phase voltages from the desired angle. It factors in angle error, velocity error, velocity feed-forward, current error, and current feed-forward. In this demo, the motor angle follows a sine wave to represent the panning motion of the phone mount.
 
 Motor angle feedback is provided by an MT6701 magnetic encoder fixed to the stator. It connects to a timer on the STM MCU configured in encoder mode along with a GPIO pin for the index pulse.
 
